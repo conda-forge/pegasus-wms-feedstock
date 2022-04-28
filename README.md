@@ -11,6 +11,23 @@ Summary: Pegasus Workflow Management System Python API
 
 Development: https://github.com/pegasus-isi/pegasus.git
 
+Documentation: https://pegasus.isi.edu/documentation/
+
+Pegasus Workflow Management System Python API
+=============================================
+
+This package contains the Python APIs for Pegasus WMS, including:
+
+1. The DAX API (Versions 2 and 3)
+2. The PDAX API (Version 2)
+3. The monitoring API
+4. The Stampede database API
+5. The Pegasus statistics API
+6. The Pegasus plots API
+7. Misc. Pegasus utilities
+8. The pegasus service, including the ensemble manager and dashboard
+
+
 Current build status
 ====================
 
@@ -30,7 +47,6 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-pegasus--wms-green.svg)](https://anaconda.org/conda-forge/pegasus-wms) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pegasus-wms.svg)](https://anaconda.org/conda-forge/pegasus-wms) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pegasus-wms.svg)](https://anaconda.org/conda-forge/pegasus-wms) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pegasus-wms.svg)](https://anaconda.org/conda-forge/pegasus-wms) |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-python--pegasus--wms-green.svg)](https://anaconda.org/conda-forge/python-pegasus-wms) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/python-pegasus-wms.svg)](https://anaconda.org/conda-forge/python-pegasus-wms) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/python-pegasus-wms.svg)](https://anaconda.org/conda-forge/python-pegasus-wms) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/python-pegasus-wms.svg)](https://anaconda.org/conda-forge/python-pegasus-wms) |
 
 Installing pegasus-wms
 ======================
@@ -42,16 +58,16 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `pegasus-wms, python-pegasus-wms` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `pegasus-wms` can be installed with `conda`:
 
 ```
-conda install pegasus-wms python-pegasus-wms
+conda install pegasus-wms
 ```
 
 or with `mamba`:
 
 ```
-mamba install pegasus-wms python-pegasus-wms
+mamba install pegasus-wms
 ```
 
 It is possible to list all of the versions of `pegasus-wms` available on your platform with `conda`:
