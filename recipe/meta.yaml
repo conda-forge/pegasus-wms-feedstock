@@ -1,5 +1,5 @@
 {% set name = "pegasus-wms" %}
-{% set version = "5.0.3" %}
+{% set version = "5.0.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pegasus-wms-{{ version }}.tar.gz
-  sha256: f9578e2a9f0dcafedf14d75a172d2b65921681d9eaf63ba2bcee8c9039dd41bd
+  sha256: 4e72298ad7a258f9f5f57b557ce14231723a6102a447aca2b99d96de872a2b20
 
 build:
   noarch: python
@@ -17,7 +17,7 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.5
+    - python >=3.6
     - setuptools >=44.0.0
   run:
     - flask >1.1
@@ -26,10 +26,9 @@ requirements:
     - pamela >=1.0
     - pegasus-wms.api
     - pegasus-wms.common
-    - pegasus-wms.dax
     - pegasus-wms.worker
     - pika >=1.1.0
-    - python >=3.5
+    - python >=3.6
     - pyyaml >5.3
     - requests >2.23
     - sqlalchemy >1.3,<1.4
@@ -41,6 +40,7 @@ test:
     - Pegasus
   commands:
     - python -m pip check
+    - python -m pip show pegasus-wms
 
 about:
   home: http://pegasus.isi.edu
