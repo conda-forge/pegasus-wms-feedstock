@@ -20,10 +20,10 @@ requirements:
     - python >=3.5
     - setuptools >=44.0.0
   run:
-    - flask >1.1
+    - flask >1.1,<2.3
     - flask-caching >1.8
     - gitpython >1.0
-    - pamela >=1.0
+    - pamela >=1.0,<1.1.0
     - pegasus-wms.api
     - pegasus-wms.common
     - pegasus-wms.dax
