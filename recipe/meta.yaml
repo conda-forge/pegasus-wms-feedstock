@@ -1,5 +1,5 @@
 {% set name = "pegasus-wms" %}
-{% set version = "5.0.4" %}
+{% set version = "5.0.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pegasus-wms-{{ version }}.tar.gz
-  sha256: 4e72298ad7a258f9f5f57b557ce14231723a6102a447aca2b99d96de872a2b20
+  sha256: fcaa51e88d439632c0dcaaedbd7c22e4dc88af07b710df65289bcee3174dbac2
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -20,10 +20,10 @@ requirements:
     - python >=3.5
     - setuptools >=44.0.0
   run:
-    - flask >1.1
+    - flask >1.1,<2.3
     - flask-caching >1.8
     - gitpython >1.0
-    - pamela >=1.0
+    - pamela >=1.0,<1.1.0
     - pegasus-wms.api
     - pegasus-wms.common
     - pegasus-wms.dax
