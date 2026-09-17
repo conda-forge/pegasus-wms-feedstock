@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pegasus-wms
-  version: "5.1.2"
+  version: "5.1.3"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: 09288acb9e4dc5b735aa52d9506da3538cf3706e2223d9b75d0e1d523cc0366d
+  sha256: 9971d73f63ab320b95b9834d6ea64d25b16603125fbe41ac33dac9ea560c64c3
 
 build:
   number: 0
